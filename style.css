@@ -1,9 +1,24 @@
-/* General Styles */
-body, html {
+/* Smooth Gradient Background */
+body {
   margin: 0;
-  padding: 0;
+  height: 100%;
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
+
+  /* Gradient background */
+  background: linear-gradient(120deg, #1e3c72, #2a5298, #6dd5ed, #2193b0);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* Optional: add a semi-transparent background for sections for readability */
+.section {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  padding: 3em 2em;
+  margin: 2em auto;
+  max-width: 1000px;
 }
 
 /* Navigation */
