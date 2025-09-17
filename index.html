@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section hero">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="assets/welcome.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay">
+      <h1>Hello & Welcome!</h1>
+      <p>I'm Mahmoud Mohamed, Data Analyst. Explore my work below.</p>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section resume">
+    <h2>My Resume</h2>
+    <div class="resume-container">
+      <div class="avatar">
+        <video autoplay muted loop playsinline>
+          <source src="assets/avatar.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="resume-details">
+        <h3>Work Experience</h3>
+        <ul>
+          <li><strong>Orange Business</strong> – Data Analyst (2023–Present)</li>
+          <li><strong>Uber Support</strong> – Rider Support Specialist (2021–2023)</li>
+        </ul>
+        <h3>Education</h3>
+        <p>Bachelor’s Degree in Business Information Systems</p>
+        <h3>Skills</h3>
+        <p>Data Analytics · SQL · Python · Visualization · Problem Solving</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/project1.png" alt="Project 1">
+        <h3>Project Title 1</h3>
+        <p>Short description of project 1.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/project2.png" alt="Project 2">
+        <h3>Project Title 2</h3>
+        <p>Short description of project 2.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/project3.png" alt="Project 3">
+        <h3>Project Title 3</h3>
+        <p>Short description of project 3.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
