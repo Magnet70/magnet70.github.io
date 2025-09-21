@@ -1,6 +1,7 @@
 /* Smooth Gradient Background */
 body {
   margin: 0;
+  margin-top: 3em;
   height: 100%;
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
@@ -63,7 +64,6 @@ body {
 .hero {
   position: relative;
   color: white;
-  scroll-margin-top: 70px; /* same as header height */
 }
 
 #bg-video {
