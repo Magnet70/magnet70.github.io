@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
-  padding: 3em;
+  padding: 1.5em;
 }
 
 .navbar ul li {
