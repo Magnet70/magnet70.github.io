@@ -63,6 +63,7 @@ body {
 .hero {
   position: relative;
   color: white;
+  scroll-margin-top: 70px; /* same as header height */
 }
 
 #bg-video {
