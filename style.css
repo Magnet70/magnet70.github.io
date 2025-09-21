@@ -1,7 +1,6 @@
 /* Smooth Gradient Background */
 body {
-  margin: 0;
-  margin-top: 3em;
+  margin-top: 70px;
   height: 100%;
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
