@@ -12,6 +12,51 @@ body {
   color: white;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none; /* hidden by default */
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+/* Mobile mode */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* hide menu by default */
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1em;
+    border-radius: 8px;
+  }
+nav ul.show {
+    display: flex; /* show menu when active */
+  }
+
+  .menu-toggle {
+    display: block; /* show hamburger button */
+  }
+}
+  
+
+  
 /* Navigation */
 .navbar {
   position: fixed;
