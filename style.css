@@ -45,7 +45,7 @@ body {
   font-size: 1.5em;
   background: none;
   border: none;
-  color: white;
+  color: #000000;
   cursor: pointer;
 }
 
@@ -54,11 +54,11 @@ body {
   .navbar ul {
     display: none; /* hide by default */
     flex-direction: column;
-    background: #333;
+    background: #ffffff;
     position: absolute;
     top: 60px;
     right: 0;
-    width: 200px;
+    width: 100%;
     padding: 1em;
     border-radius: 8px;
   }
