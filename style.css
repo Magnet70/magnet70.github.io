@@ -60,6 +60,94 @@ body {
   cursor: pointer;
 }
 
+
+
+/* Home Section */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 2em;
+  background: #ffffff;
+  color: #000000;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2em;
+}
+
+.home-text {
+  flex: 1 1 500px;
+}
+
+.home-text h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.home-text h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0.5em 0;
+  color: #333;
+}
+
+.home-text p {
+  font-size: 1rem;
+  margin-bottom: 1.5em;
+  color: #444;
+}
+
+.btn {
+  background: #4c72ff;
+  color: white;
+  padding: 0.8em 1.5em;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #3456d1;
+}
+
+.home-image {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+/* Background shape behind image */
+.home-image::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: #4c72ff;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+
+
+
 /* Mobile mode */
 @media (max-width: 768px) {
   .navbar ul {
@@ -88,4 +176,17 @@ body {
   .menu-toggle {
     display: block; /* show hamburger */
   }
+
+  
+  /* Home section*/
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-image::before {
+    width: 60%;
+    height: 60%;
+  }
+  
 }
