@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* General header */
 header {
   display: flex;
