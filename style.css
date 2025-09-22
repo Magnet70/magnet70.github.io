@@ -19,6 +19,12 @@ body {
 }
 
 /* Navbar links */
+.navbar{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .navbar ul {
   list-style: none;
   display: flex;
