@@ -1,11 +1,6 @@
-// Placeholder for interactivity (smooth scroll handled by CSS)
-console.log("One-page portfolio loaded!");
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".navbar ul");
 
-<script>
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector("nav ul");
-
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-  });
-</script>
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
