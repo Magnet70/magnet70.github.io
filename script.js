@@ -1,6 +1,13 @@
 const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".navbar ul");
+const navMenu = document.querySelector(".navbar ul");
 
 menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
+  navMenu.classList.toggle("show");
+
+  // Switch between ☰ and ✖
+  if (navMenu.classList.contains("show")) {
+    menuToggle.innerHTML = "&#10006;"; // ✖
+  } else {
+    menuToggle.innerHTML = "&#9776;";  // ☰
+  }
 });
