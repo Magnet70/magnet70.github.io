@@ -298,8 +298,11 @@ body {
 }
 
 .projects-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
   gap: 2rem;
 }
 
