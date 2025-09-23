@@ -319,6 +319,7 @@ body {
 
 .project-item h3 a {
   color: #000;
+  font-family: "Verdana";
   text-decoration: none;
 }
 
@@ -328,15 +329,17 @@ body {
 
 .project-item p {
   margin: 0.25rem 0;
+  font-family: "Arial";
 }
 
 .tech-btn {
   display: inline-block;
   margin: 0.25rem 0.5rem 0.25rem 0;
   padding: 0.3rem 0.7rem;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #e0e0e0; /* slightly darker than section */
   color: #000;
+  font-family: "Arial";
   font-size: 0.9rem;
 }
 
@@ -344,9 +347,10 @@ body {
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
-  border-radius: 30px;
+  border-radius: 15px;
   background-color: #4c72ff; /* same as little divider */
   color: #fff;
+  font-family: "Arial";
   text-decoration: none;
   font-weight: bold;
 }
