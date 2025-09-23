@@ -63,6 +63,53 @@ body {
   cursor: pointer;
 }
 
+/* Intro text */
+.intro-text {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem; /* same as h2 "Data Analyst" */
+  margin: 0;
+  text-align: center;
+}
+/* Desktop layout */
+@media (min-width: 769px) {
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* equal spacing between texts */
+  }
+  .intro-text {
+    order: 1; /* top of the column */
+  }
+  .home-text {
+    order: 2; /* middle */
+  }
+  .home-image {
+    order: 3; /* bottom */
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .intro-text {
+    order: 1; /* above the picture */
+    margin-top: 1rem;
+  }
+  .home-image {
+    order: 2; /* middle */
+  }
+  .home-text {
+    order: 3; /* below the picture */
+  }
+}
+
+
+
 
 
 /* Home Section */
