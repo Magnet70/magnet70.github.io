@@ -270,6 +270,90 @@ body {
 
   
 
+/* Projects Section */
+.projects-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.projects-card {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projects-card h2 {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  font-family: "Verdana";
+  font-weight: 700;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-item {
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #f7f7f7; /* slightly lighter than section */
+  text-align: left;
+}
+
+.project-item h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.project-item h3 a {
+  color: #000;
+  text-decoration: none;
+}
+
+.project-item h3 a:hover {
+  color: #4c72ff; /* same color as little divider */
+}
+
+.project-item p {
+  margin: 0.25rem 0;
+}
+
+.tech-btn {
+  display: inline-block;
+  margin: 0.25rem 0.5rem 0.25rem 0;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  background-color: #e0e0e0; /* slightly darker than section */
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.project-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  background-color: #4c72ff; /* same as little divider */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-btn:hover {
+  background-color: #3456d1;
+}
+
+
+  
+
+
 
 
 
@@ -351,5 +435,13 @@ body {
 
   .badges-grid img {
     max-width: 100px;
+  }
+  
+  .projects-card {
+    padding: 1rem;
+  }
+
+  .project-item {
+    padding: 0.75rem;
   }
 }
