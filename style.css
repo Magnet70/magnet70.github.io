@@ -74,19 +74,18 @@ body {
 @media (min-width: 769px) {
   .home-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 1.5rem; /* equal spacing between texts */
   }
-  .intro-text {
-    order: 1; /* top of the column */
-  }
-  .home-text {
-    order: 2; /* middle */
+  .intro-text, .home-text {
+    flex: 1 1 auto; /* top of the column */
   }
   .home-image {
-    order: 3; /* bottom */
+    flex: 0 1 400px; /* bottom */
   }
+  
 }
 
 /* Mobile layout */
