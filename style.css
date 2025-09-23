@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 section {
-  scroll-margin-top: 80px; /* equal to navbar height */
+  scroll-margin-top: 50px; /* equal to navbar height */
 }
 
 /* General header */
