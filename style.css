@@ -568,6 +568,8 @@ body {
 
   .contact-card {
     max-width: 100%;
+    flex: unset;
+    padding: 1.2rem 1rem;
   }
   
 }
