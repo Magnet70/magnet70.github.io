@@ -70,24 +70,48 @@ body {
   margin: 0;
   text-align: center;
 }
-/* Desktop layout */
+
+
+
+/* Desktop layout adjustments for Home section */
 @media (min-width: 769px) {
   .home-content {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: row;      /* horizontal layout */
+    align-items: center;      /* vertical alignment */
     justify-content: space-between;
-    gap: 1.5rem; /* equal spacing between texts */
+    gap: 2rem;
   }
-  .intro-text, .home-text {
-    flex: 1 1 auto; /* top of the column */
+
+  /* Text on the left */
+  .home-text {
+    flex: 1;                  /* take available space */
+    display: flex;
+    flex-direction: column;    /* stack intro + name vertically */
+    align-items: flex-start;   /* align all text to left */
   }
+
+  /* Ensure intro and name align together */
+  .intro-text {
+    margin: 0;
+    text-align: left;
+  }
+
+  .home-text h1 {
+    margin: 0.2em 0 0 0;     /* small space below intro */
+    text-align: left;
+  }
+
   .home-image {
-    flex: 0 1 400px; /* bottom */
+    flex: 0 0 auto;           /* keep image size fixed */
+    max-width: 400px;         /* same as before */
+    margin-left: 2rem;        /* space between text and image */
   }
-  
 }
 
+
+
+  
 /* Mobile layout */
 @media (max-width: 768px) {
   .home-content {
