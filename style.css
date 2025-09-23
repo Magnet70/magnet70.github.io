@@ -197,7 +197,74 @@ body {
   font-family:"Arial";
 }
 
+
+
+
+
+/* Badges Section */
+.badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  scroll-margin-top: 80px;
+}
+
+.badges-card {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1rem 1.25rem;
+}
+
+.badges-card h2 {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  letter-spacing: 0.2px;
+  color: black;
+  font-weight: 700;
+  font-family:"Verdana";
+}
+
+.badges-divider {
+  width: 64px;
+  height: 4px;
+  background-color: #4c72ff;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+/* Top badge */
+.badge-top img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+/* Grid for other 6 badges */
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.badges-grid img {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+}
+
   
+
+
 
 
 
@@ -264,5 +331,19 @@ body {
   .about-divider {
     width: 52px;
     height: 3px;
+  }
+
+  .badges-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .badge-top img {
+    max-width: 140px;
+    margin-bottom: 1.5rem;
+  }
+
+  .badges-grid img {
+    max-width: 100px;
   }
 }
