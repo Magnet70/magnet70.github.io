@@ -63,20 +63,6 @@ body {
   cursor: pointer;
 }
 
-/* Intro text */
-.intro-text {
-  font-family: Arial, sans-serif;
-  font-size: 1.5rem; /* same as h2 "Data Analyst" */
-  margin: 0;
-  text-align: center;
-}
-
-
-
-
-
-
-
 
 
 /* Home Section */
@@ -131,7 +117,7 @@ body {
   background: #4c72ff;
   color: white;
   padding: 0.8em 1.5em;
-  border-radius: 10px;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
@@ -433,7 +419,7 @@ body {
   background-color: #f7f7f7; /* slightly darker than white */
   padding: 1.5rem 1rem;
   border-radius: 12px;
-  flex: 1 1 200px; /* responsive width */
+  flex: 1 1 250px; /* responsive width */
   max-width: 300px;
   display: flex;
   flex-direction: column;
@@ -582,8 +568,6 @@ body {
 
   .contact-card {
     max-width: 100%;
-    flex: unset;
-    padding: 1.2rem 1rem;
   }
   
-}
+  }
