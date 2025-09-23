@@ -241,6 +241,10 @@ body {
     order: 1;
   }
 
+  .about-section{
+    min-height: auto;
+    padding: 3rem 1 rem;
+  }
   .about-card {
     gap: 1rem;
   }
