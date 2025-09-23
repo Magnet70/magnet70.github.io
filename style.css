@@ -241,9 +241,12 @@ body {
     order: 1;
   }
 
+  body{
+    margin-top: 60px;
+  }
   .about-section{
     min-height: auto;
-    padding: 3rem 1 rem;
+    padding: 2rem 1rem;
   }
   .about-card {
     gap: 1rem;
