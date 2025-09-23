@@ -67,8 +67,6 @@ body {
 
 /* Home Section */
 .home {
-  border: 5px solid red;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,9 +76,6 @@ body {
 }
 
 .home-content {
-  border: 5px solid blue;
-
-  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,9 +86,6 @@ body {
 }
 
 .home-text {
-  border: 5px solid green;
-
-  
   order: 1;
   flex: 1 1 500px;
 }
