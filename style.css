@@ -233,6 +233,10 @@ body {
   .home-content {
     flex-direction: column;
     text-align: center;
+    gap: 1rem;
+  }
+  .home{
+    padding-bottom: 1rem;
   }
   .home-text{
     order: 2;
