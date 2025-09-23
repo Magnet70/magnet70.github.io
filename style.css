@@ -419,7 +419,7 @@ body {
   background-color: #f7f7f7; /* slightly darker than white */
   padding: 1.5rem 1rem;
   border-radius: 12px;
-  flex: 1 1 250px; /* responsive width */
+  flex: 1 1 200px; /* responsive width */
   max-width: 300px;
   display: flex;
   flex-direction: column;
