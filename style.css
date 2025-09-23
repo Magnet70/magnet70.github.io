@@ -364,7 +364,106 @@ body {
 }
 
 
+
+
+
+/* Contact Me Section */
+.contact{
+  margin-top: 3rem;
+
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.contact-card-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Title and Divider */
+.contact-card-wrapper h2 {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  font-family: "Verdana";
+  font-weight: 700;
+}
+
+.contact-divider {
+  width: 64px;
+  height: 4px;
+  background-color: #4c72ff; /* same as About section */
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+/* Cards Container */
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Individual Cards */
+.contact-card {
+  background-color: #f7f7f7; /* slightly darker than white */
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  flex: 1 1 250px; /* responsive width */
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.contact-card p {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: #000;
+}
+
+.contact-card a {
+  color: #4c72ff;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Icons inside cards */
+.contact-icon {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: grayscale(100%); /* black-and-white effect */
+  transition: transform 0.3s ease;
+}
+
+.contact-icon img:hover {
+  transform: scale(1.1);
+}
+
 
 
 
@@ -461,4 +560,14 @@ body {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+  
+  .contact-cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    max-width: 100%;
+  }
+  
 }
