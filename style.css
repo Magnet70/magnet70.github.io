@@ -73,63 +73,7 @@ body {
 
 
 
-/* Desktop layout adjustments for Home section */
-@media (min-width: 769px) {
-  .home-content {
-    display: flex;
-    flex-direction: row;      /* horizontal layout */
-    align-items: center;      /* vertical alignment */
-    justify-content: space-between;
-    gap: 2rem;
-  }
 
-  /* Text on the left */
-  .home-text {
-    flex: 1;                  /* take available space */
-    display: flex;
-    flex-direction: column;    /* stack intro + name vertically */
-    align-items: flex-start;   /* align all text to left */
-  }
-
-  /* Ensure intro and name align together */
-  .intro-text {
-    margin: 0;
-    text-align: left;
-  }
-
-  .home-text h1 {
-    margin: 0.2em 0 0 0;     /* small space below intro */
-    text-align: left;
-  }
-
-  .home-image {
-    flex: 0 0 auto;           /* keep image size fixed */
-    max-width: 400px;         /* same as before */
-    margin-left: 2rem;        /* space between text and image */
-  }
-}
-
-
-
-  
-/* Mobile layout */
-@media (max-width: 768px) {
-  .home-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  .intro-text {
-    order: 1; /* above the picture */
-    margin-top: 1rem;
-  }
-  .home-image {
-    order: 2; /* middle */
-  }
-  .home-text {
-    order: 3; /* below the picture */
-  }
-}
 
 
 
