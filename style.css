@@ -271,10 +271,11 @@ body {
   
 
 /* Projects Section */
-.projects-section {
+.projects {
   margin-top: 3rem;
+}
 
-  
+.projects-section {
   display: flex;
   justify-content: center;
   align-items: center;
