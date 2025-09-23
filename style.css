@@ -9,7 +9,7 @@ section {
 header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1em 2em;
   background: #ffffff;
   color: #000000;
@@ -473,6 +473,9 @@ body {
 
 /* Mobile mode */
 @media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+  }
   .navbar ul {
     display: none; /* hide by default */
     flex-direction: column;
