@@ -564,10 +564,11 @@ body {
   .contact-cards {
     flex-direction: column;
     gap: 1.5rem;
+    align-items: center;
   }
 
   .contact-card {
-    max-width: 100%;
+    max-width: 90%;
     flex: 1 1 auto;
     padding: 1rem;
   }
