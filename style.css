@@ -132,8 +132,11 @@ body {
   border: 5px solid red;
   
   order: 2;
-  flex: 0 0 auto;
-  width: fit-content;
+  
+  /*flex: 1 1 400px;*/
+  flex: 0 1 auto;
+  max-width: 400px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
