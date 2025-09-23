@@ -67,6 +67,8 @@ body {
 
 /* Home Section */
 .home {
+  border: 5px solid red;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,6 +150,9 @@ body {
 
 /* About Me Section */
 .about-section {
+  border: 5px solid blue;
+
+  
   display: flex;
   align-items: center;
   justify-content: center;
