@@ -256,7 +256,7 @@ body {
 /* Grid for other 6 badges */
 .badges-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
   justify-items: center;
   align-items: center;
