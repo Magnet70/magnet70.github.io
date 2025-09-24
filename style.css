@@ -590,15 +590,18 @@ body {
 }
 
 .courses-section .section-title {
-  font-size: 2.5rem;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
   font-weight: 700;
   margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Verdana";
 }
 
 .courses-section .section-divider {
   width: 60px;
   height: 4px;
-  background: black;
+  background: #4c72ff;
   margin: 0 auto 40px auto;
   border-radius: 2px;
 }
@@ -632,7 +635,7 @@ body {
 
 .course-provider {
   font-size: 0.95rem;
-  color: black;
+  color: #4c72ff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -643,13 +646,13 @@ body {
 
 .course-links {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 8px;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 
 .course-link {
-  color: black;
+  color: #4c72ff;
   font-size: 0.95rem;
   text-decoration: none;
   display: inline-flex;
@@ -812,8 +815,6 @@ body {
   .courses-container {
     grid-template-columns: 1fr;
     max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
   }
 
   .course-item {
@@ -827,9 +828,8 @@ body {
   }
 
   .course-links {
-    align-items: flex-start;
-    flex-direction: row;
-    gap: 20px;
+    align-self: flex-start;
+    margin-top: 5px;
   }
   
   }
