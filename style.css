@@ -477,6 +477,53 @@ body {
 
 
 
+/* ===== Why Me Section ===== */
+.why-me-section {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.why-me-section .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.why-me-section .section-divider {
+  width: 60px;
+  height: 4px;
+  background: #000; /* same color as About section divider */
+  margin: 0 auto 40px auto;
+  border-radius: 2px;
+}
+
+.why-me-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 60px; /* vertical and horizontal spacing */
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.why-me-item {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  align-items: flex-start;
+}
+
+.why-me-item i {
+  color: #28a745; /* green tick color */
+  margin-right: 10px;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+  
+
+
 
 
 
@@ -935,6 +982,11 @@ body {
   .scroll-content span {
     font-size: 1rem;
   }
-
+  
+ .why-me-container {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  
   
   }
