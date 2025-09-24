@@ -8,8 +8,9 @@ section {
 /* General header */
 header {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   padding: 1em 2em;
   background: #ffffff;
   color: #000000;
@@ -27,13 +28,15 @@ body {
 /* Navbar links */
 .navbar{
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap; /* allow wrapping on tablets */
-  gap: 2em;
+  gap: 1em;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -53,7 +56,6 @@ body {
 /* Hamburger button (hidden on desktop) */
 .menu-toggle {
   display: none;
-  margin-left: auto;
   font-size: 1.8em;
   background: none;
   border: none;
@@ -115,7 +117,7 @@ body {
   background: #4c72ff;
   color: white;
   padding: 0.8em 1.5em;
-  border-radius: 30px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
@@ -417,7 +419,7 @@ body {
   background-color: #f7f7f7; /* slightly darker than white */
   padding: 1.5rem 1rem;
   border-radius: 12px;
-  flex: 1 1 250px; /* responsive width */
+  flex: 1 1 200px; /* responsive width */
   max-width: 300px;
   display: flex;
   flex-direction: column;
@@ -472,14 +474,19 @@ body {
 
 /* Mobile mode */
 @media (max-width: 768px) {
-  header {
-    justify-content: space-between;
-  }
   .navbar ul {
     display: none; /* hide by default */
     flex-direction: column;
     align-items: center;
+    background: #ffffff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
     width: 100%;
+    padding: 1em 0;
+    border-radius: 0;
+    margin: 0;
   }
   .navbar ul li{
     width: 100%;
@@ -557,14 +564,12 @@ body {
   .contact-cards {
     flex-direction: column;
     gap: 1.5rem;
-    align-items: center;
   }
 
   .contact-card {
-    width: 100%;
-    max-width: 350px;
-    flex: none;
-    padding: 1rem;
+    max-width: 100%;
+    flex: unset;
+    padding: 1.2rem 1rem;
   }
   
   }
