@@ -680,6 +680,93 @@ body {
 
 
 
+
+
+/* ===== Skills Section ===== */
+.skills-section {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.skills-section .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.skills-section .section-divider {
+  width: 60px;
+  height: 4px;
+  background: #000; /* same color as About divider */
+  margin: 0 auto 40px auto;
+  border-radius: 2px;
+}
+
+/* Scroll rows */
+.scroll-row {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #fff;
+  padding: 20px 0;
+}
+
+.scroll-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 60px; /* spacing between items */
+  animation: scrollRight 40s linear infinite;
+}
+
+.scroll-row.scroll-left .scroll-content {
+  animation: scrollLeft 40s linear infinite;
+}
+
+.scroll-content img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+}
+
+.scroll-content span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  white-space: nowrap;
+}
+
+/* Animations */
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+  
+
+
+
+
+
+
+
+
 /* Mobile mode */
 @media (max-width: 768px) {
   .navbar ul {
@@ -839,5 +926,15 @@ body {
     gap: 16px;
     margin-top: 5px;
   }
+  
+  .scroll-content img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .scroll-content span {
+    font-size: 1rem;
+  }
+
   
   }
