@@ -13,7 +13,7 @@ section {
 }
 
 .logo-img {
-  width: 140px;        /* Default desktop size */
+  width: 100px;        /* Default desktop size */
   height: auto;
   max-width: 25vw;     /* Keeps it responsive */
   transition: all 0.3s ease;
@@ -23,7 +23,7 @@ section {
 /* Mobile Responsive */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
   }
