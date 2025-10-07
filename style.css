@@ -13,7 +13,7 @@ section {
 }
 
 .logo-img {
-  width: 2em;        /* Default desktop size */
+  width: 75px;        /* Default desktop size */
   height: auto;
   max-width: 25vw;     /* Keeps it responsive */
   transition: all 0.3s ease;
@@ -35,7 +35,7 @@ section {
 
   .logo-img {
     width: 110px;       /* Smaller size for mobile */
-    margin: 0.1em 0.5em;
+    margin: 0.1em 0.2em;
   }
 
   header nav ul {
