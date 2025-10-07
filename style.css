@@ -13,7 +13,7 @@ section {
 }
 
 .logo-img {
-  width: 100px;        /* Default desktop size */
+  width: 2em;        /* Default desktop size */
   height: auto;
   max-width: 25vw;     /* Keeps it responsive */
   transition: all 0.3s ease;
