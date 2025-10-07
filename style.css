@@ -892,6 +892,9 @@ body {
 
   .menu-toggle {
     display: block; /* show hamburger */
+    position: absolute;
+    top: 15px;
+    right:20px;
   }
 
   
