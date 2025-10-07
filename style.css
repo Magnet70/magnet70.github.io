@@ -15,7 +15,7 @@ section {
 .logo-img {
   width: 50px;        /* Default desktop size */
   height: auto;
-  max-width: 25vw;     /* Keeps it responsive */
+ /* max-width: 25vw;     /* Keeps it responsive */
   transition: all 0.3s ease;
   display: block;
 }
