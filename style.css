@@ -735,12 +735,12 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 60px; /* spacing between items */
-  animation: scrollRight 40s linear infinite;
+  animation: scrollRight 20s linear infinite;
   padding-right: 60px;
 }
 
 .scroll-row.scroll-left .scroll-content {
-  animation: scrollLeft 40s linear infinite;
+  animation: scrollLeft 20s linear infinite;
   padding-right: 0;
   padding-left: 60px;
 }
@@ -757,7 +757,7 @@ scroll-content::after{
   width: 120px;
   height: 120px;
   object-fit: contain;
-/*  filter: grayscale(100%); */
+  filter: grayscale(100%); 
 }
 
 .scroll-content span {
