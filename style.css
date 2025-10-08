@@ -799,22 +799,23 @@ body {
 
 /* === Scrolling Skill Words === */
 .skills-words {
-  display: flex;
   overflow: hidden;
   white-space: nowrap;
+  width: 100%;
   position: relative;
-  padding: 40px 0;
+  padding: 30px 0;
   /* background: #f9f9f9; */
 }
 
-.skills-words .scroll-content {
-  display: inline-flex;
-  align-items: center;
-  gap: 60px;
-  animation: scrollWords 25s linear infinite;
+.skills-words .scroll-track{
+  display: flex;
+  width: max-content;
+  animation: scrollWords 18s linear infinite;
 }
 
 .skills-words .word {
+  display: inline-block;
+  margin: 0 50px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 1.6rem;
@@ -825,6 +826,7 @@ body {
   -webkit-text-fill-color: transparent;
   user-select: none;
   transition: transform 0.3s ease, filter 0.3s ease;
+  white-space: nowrap;
 }
 
 .skills-words .word:hover {
@@ -835,23 +837,22 @@ body {
 
 /* === Responsive Fix === */
 @media (max-width: 768px) {
-  .skills-words .scroll-content {
-    gap: 35px;
-    animation-duration: 30s; /* slower scroll */
-  }
   .skills-words .word {
     font-size: 1.2rem;
-    letter-spacing: 0.5px;
+    margin: 0 30px;
+  }
+  .skills-words .scroll-track {
+    animation-duration: 22s;
   }
 }
 
 @media (max-width: 480px) {
-  .skills-words .scroll-content {
-    gap: 25px;
-    animation-duration: 35s;
+  .skills-words .scroll-track {
+    animation-duration: 26s;
   }
   .skills-words .word {
     font-size: 1rem;
+    margin: 0 20px;
   }
 }
 
