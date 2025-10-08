@@ -105,8 +105,7 @@ body {
 }
 
 
-/* the unified style for section titles and dividers */
-
+/* ===== Unified Section Title and Divider Styles ===== */
 .section-title {
   margin: 0;
   margin-bottom: 0.25rem;
@@ -123,28 +122,11 @@ body {
   height: 4px;
   background-color: #4c72ff;
   border-radius: 4px;
-  margin: 0.75rem auto 2rem; /* This creates consistent spacing */
+  margin: 0.75rem auto 2rem; /* Consistent spacing: 0.75rem top, 2rem bottom */
 }
 
-/* Apply section-title styles to all section headings */
-.about-card h2,
-.badges-card h2,
-.projects-card h2,
-.experience-card h2,
-.contact-card-wrapper h2,
-.courses-section h2,
-.skills-section h2,
-.why-me-section h2 {
-  margin: 0;
-  margin-bottom: 0.25rem;
-  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
-  letter-spacing: 0.2px;
-  color: black;
-  font-weight: 700;
-  font-family: "Verdana";
-  text-align: center;
-}
 
+  
 
 
 
@@ -251,7 +233,6 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1.25rem;
   padding: 1rem 1.25rem;
 }
 
@@ -286,7 +267,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.25rem;
   padding: 1rem 1.25rem;
 }
 
@@ -346,7 +326,6 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 2rem;
   padding: 1.5rem;
 }
 
@@ -554,7 +533,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
 }
 
 
@@ -856,9 +834,7 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
   }
-  .about-card {
-    gap: 1rem;
-  }
+
   .about-divider {
     width: 52px;
     height: 3px;
