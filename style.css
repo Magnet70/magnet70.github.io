@@ -215,7 +215,7 @@ body {
 
 .about-card h2 {
   margin: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
   font-size: clamp(1.25rem, 2.2vw, 1.75rem);
   letter-spacing: 0.2px;
   color: black;
@@ -267,7 +267,7 @@ body {
 
 .badges-card h2 {
   margin: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
   font-size: clamp(1.25rem, 2.2vw, 1.75rem);
   letter-spacing: 0.2px;
   color: black;
@@ -344,7 +344,7 @@ body {
 
 .projects-card h2 {
   margin: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
   font-size: clamp(1.25rem, 2.2vw, 1.75rem);
   font-family: "Verdana";
   font-weight: 700;
@@ -447,7 +447,7 @@ body {
 
 .experience-card h2 {
   margin: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
   font-size: clamp(1.25rem, 2.2vw, 1.75rem);
   font-family: "Verdana";
   font-weight: 700;
@@ -604,7 +604,7 @@ body {
 /* Title and Divider */
 .contact-card-wrapper h2 {
   margin: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
   font-size: clamp(1.25rem, 2.2vw, 1.75rem);
   font-family: "Verdana";
   font-weight: 700;
