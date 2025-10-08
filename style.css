@@ -326,7 +326,6 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 2rem;
   padding: 0;
 }
 
@@ -875,11 +874,6 @@ scroll-content::after{
     width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
-  }
-
-  .about-divider {
-    width: 52px;
-    height: 3px;
   }
 
   .badges-grid {
