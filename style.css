@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 section {
-  scroll-margin-top: 100px; /* equal to navbar height */
+  scroll-margin-top: 120px; /* equal to navbar height */
 }
 
 
@@ -25,7 +25,7 @@ section {
   height: auto;
   display: block;
   transition: transform 0.3s ease, width 0.3s ease;
-  margin: 0 0.25rem;
+  margin: 0 0.1rem;
   cursor: pointer;
 }
 
@@ -40,7 +40,7 @@ section {
     justify-content: flex-start;
   }
   .logo-img {
-    margin-left:0.25rem;
+    margin-left:0.1rem;
   }
 }
 
