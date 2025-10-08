@@ -1004,10 +1004,11 @@ body {
     gap: 16px;
     margin-top: 5px;
   }
-  
+  .skills .logos img,
   .scroll-content img {
-    width: 45px;
-    height: 45px;
+    width: auto;
+    height: 50px;
+    object-fit: contain;
   }
   
   .scroll-content span {
