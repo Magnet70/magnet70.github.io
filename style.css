@@ -126,48 +126,24 @@ body {
   margin: 0.75rem auto 2rem; /* This creates consistent spacing */
 }
 
-/* Remove all individual divider styles and replace with: */
-
-/* About Section */
-.about-card h2 {
-  composes: section-title; /* If using CSS modules, otherwise use the class directly */
+/* Apply section-title styles to all section headings */
+.about-card h2,
+.badges-card h2,
+.projects-card h2,
+.experience-card h2,
+.contact-card-wrapper h2,
+.courses-section h2,
+.skills-section h2,
+.why-me-section h2 {
+  margin: 0;
+  margin-bottom: 0.25rem;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  letter-spacing: 0.2px;
+  color: black;
+  font-weight: 700;
+  font-family: "Verdana";
+  text-align: center;
 }
-
-/* Badges Section */
-.badges-card h2 {
-  composes: section-title;
-}
-
-/* Projects Section */
-.projects-card h2 {
-  composes: section-title;
-}
-
-/* Experience Section */
-.experience-card h2 {
-  composes: section-title;
-}
-
-/* Contact Section */
-.contact-card-wrapper h2 {
-  composes: section-title;
-}
-
-/* Courses Section */
-.courses-section .section-title {
-  composes: section-title;
-}
-
-/* Skills Section */
-.skills-section .section-title {
-  composes: section-title;
-}
-
-/* Why Me Section */
-.why-me-section .section-title {
-  composes: section-title;
-}
-
 
 
 
