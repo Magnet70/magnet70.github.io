@@ -704,18 +704,30 @@ body {
   white-space: nowrap;
   background: #fff;
   padding: 20px 0;
+  position: relative;
 }
 
 .scroll-content {
   display: inline-flex;
   align-items: center;
   gap: 60px; /* spacing between items */
-  animation: scrollRight 120s linear infinite;
+  animation: scrollRight 40s linear infinite;
+  padding-right: 60px;
 }
 
 .scroll-row.scroll-left .scroll-content {
-  animation: scrollLeft 120s linear infinite;
+  animation: scrollLeft 40s linear infinite;
+  padding-right: 0;
+  padding-left: 60px;
 }
+
+scroll-content::after{
+  content: "";
+  display: inline-flex;
+  align-items: center;
+  gap: 60px;
+}
+
 
 .scroll-content img {
   width: 60px;
@@ -734,19 +746,19 @@ body {
 /* Animations */
 @keyframes scrollRight {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes scrollLeft {
   0% {
-    transform: translateX(100%);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(0);
   }
 }
 
