@@ -721,6 +721,14 @@ body {
   overflow: hidden;
 }
 
+.skills .logos img{
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  
+}
+
+
 /* Scroll rows */
 .scroll-row {
   display: flex;
