@@ -931,7 +931,6 @@ body {
   }
   .about,
   .badges,
-  .projects,
   .experience,
   .contact,
   .courses-section,
@@ -1021,7 +1020,7 @@ body {
     grid-template-columns: 1fr;
     max-width: 100%;
     width: 100%;
-    box-sizing: border-box:
+    box-sizing: border-box;
   }
 
   .course-item {
