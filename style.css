@@ -981,6 +981,17 @@ body {
   .projects-list {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .project-item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
   }
   
   .contact-cards {
