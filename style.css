@@ -5,57 +5,49 @@ section {
   scroll-margin-top: 100px; /* equal to navbar height */
 }
 
+
+
 /* ===== Logo Styling ===== */
 .logo {
-  flex-shrink: 0;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
+/* Responsive Logo Image */
 .logo-img {
-  width: 50px;        /* Default desktop size. will be overridden below */
+  width: clamp(80px, 12vw, 100px); /* 🧠 responsive: min 80px, ideal 12% viewport width, max 140px */
   height: auto;
-  max-width: 25vw;     /* Keeps it responsive */
-  transition: all 0.3s ease;
   display: block;
-  margin: 0 10px;
+  transition: transform 0.3s ease, width 0.3s ease;
+  margin: 0 12px;
+  cursor: pointer;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  header {
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-  }
+/* Optional: Add a small hover effect (nice touch) */
+.logo-img:hover {
+  transform: scale(1.05);
+}
 
+/* Center logo on mobile */
+@media (max-width: 768px) {
   .logo {
     justify-content: center;
-    margin-bottom: 0px;
+    margin: 0 auto;
   }
 
   .logo-img {
-    width: 30px;      
-    margin: 0 10px;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    gap: 15px;
+    margin: 0 auto;
   }
 }
 
-
+/* Align logo to the left on larger screens */
 @media (min-width: 769px) {
   .logo {
     justify-content: flex-start;
   }
-
-  .logo-img {
-    width: 140px;
-    margin: 0 20px
-  }
 }
+
 
 
 /* General header */
@@ -894,9 +886,7 @@ body {
 
   .menu-toggle {
     display: block; /* show hamburger */
-    position: absolute;
-    top: 15px;
-    right:40px;
+    position: static;
   }
 
   
