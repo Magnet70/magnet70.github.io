@@ -1,9 +1,4 @@
-
-  .projects-card {
-    padding: 1rem;
-  }
-
-  html {
+html {
   scroll-behavior: smooth;
 }
 section {
@@ -318,7 +313,11 @@ body {
 
 /* Projects Section */
 .projects {
-  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .projects-section {
@@ -338,6 +337,7 @@ body {
   align-items: center;
   text-align: center;
   gap: 2rem;
+  padding: 1.5rem;
 }
 
 .projects-card h2 {
@@ -965,6 +965,19 @@ body {
 {
     padding: 0.75rem;
   }
+  .projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .projects-card{
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 1.5rem;
+  }
+  
   .projects-list {
     grid-template-columns: 1fr;
     gap: 1.5rem;
