@@ -105,6 +105,72 @@ body {
 }
 
 
+/* the unified style for section titles and dividers */
+
+.section-title {
+  margin: 0;
+  margin-bottom: 0.25rem;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  letter-spacing: 0.2px;
+  color: black;
+  font-weight: 700;
+  font-family: "Verdana";
+  text-align: center;
+}
+
+.section-divider {
+  width: 64px;
+  height: 4px;
+  background-color: #4c72ff;
+  border-radius: 4px;
+  margin: 0.75rem auto 2rem; /* This creates consistent spacing */
+}
+
+/* Remove all individual divider styles and replace with: */
+
+/* About Section */
+.about-card h2 {
+  composes: section-title; /* If using CSS modules, otherwise use the class directly */
+}
+
+/* Badges Section */
+.badges-card h2 {
+  composes: section-title;
+}
+
+/* Projects Section */
+.projects-card h2 {
+  composes: section-title;
+}
+
+/* Experience Section */
+.experience-card h2 {
+  composes: section-title;
+}
+
+/* Contact Section */
+.contact-card-wrapper h2 {
+  composes: section-title;
+}
+
+/* Courses Section */
+.courses-section .section-title {
+  composes: section-title;
+}
+
+/* Skills Section */
+.skills-section .section-title {
+  composes: section-title;
+}
+
+/* Why Me Section */
+.why-me-section .section-title {
+  composes: section-title;
+}
+
+
+
+
 
 /* Home Section */
 .home {
@@ -192,7 +258,7 @@ body {
 /* About Me Section */
 .about {
   margin-top: 3rem;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,23 +277,6 @@ body {
   text-align: center;
   gap: 1.25rem;
   padding: 1rem 1.25rem;
-}
-
-.about-card h2 {
-  margin: 0;
-  margin-bottom: 0.25rem;
-  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
-  letter-spacing: 0.2px;
-  color: black;
-  font-weight: 700;
-  font-family:"Verdana";
-}
-
-.about-divider {
-  width: 64px;
-  height: 4px;
-  background-color: #4c72ff;
-  border-radius: 4px;
 }
 
 .about-body {
@@ -265,23 +314,6 @@ body {
   padding: 1rem 1.25rem;
 }
 
-.badges-card h2 {
-  margin: 0;
-  margin-bottom: 0.25rem;
-  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
-  letter-spacing: 0.2px;
-  color: black;
-  font-weight: 700;
-  font-family:"Verdana";
-}
-
-.badges-divider {
-  width: 64px;
-  height: 4px;
-  background-color: #4c72ff;
-  border-radius: 4px;
-  margin-bottom: 1.5rem;
-}
 
 /* Top badge */
 .badge-top {
@@ -340,14 +372,6 @@ body {
   text-align: center;
   gap: 2rem;
   padding: 1.5rem;
-}
-
-.projects-card h2 {
-  margin: 0;
-  margin-bottom: 0.25rem;
-  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
-  font-family: "Verdana";
-  font-weight: 700;
 }
 
 .projects-list {
@@ -417,15 +441,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 /* ======= Experience Section ======= */
 .experience {
   margin-top: 3rem;
@@ -443,23 +458,6 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: left;
-}
-
-.experience-card h2 {
-  margin: 0;
-  margin-bottom: 0.25rem;
-  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
-  font-family: "Verdana";
-  font-weight: 700;
-  text-align: center;
-}
-
-.experience-divider {
-  width: 64px;
-  height: 4px;
-  background-color: #4c72ff;
-  border-radius: 4px;
-  margin: 0.75rem auto 2rem;
 }
 
 /* ======= Job Element ======= */
@@ -525,27 +523,11 @@ body {
 
   
 
-
-
 /* ===== Why Me Section ===== */
 .why-me-section {
   padding: 80px 20px;
   background: #fff;
   text-align: center;
-}
-
-.why-me-section .section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.why-me-section .section-divider {
-  width: 60px;
-  height: 4px;
-  background: #000; /* same color as About section divider */
-  margin: 0 auto 40px auto;
-  border-radius: 2px;
 }
 
 .why-me-container {
@@ -582,8 +564,6 @@ body {
 /* Contact Me Section */
 .contact{
   margin-top: 3rem;
-
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -601,22 +581,6 @@ body {
   gap: 2rem;
 }
 
-/* Title and Divider */
-.contact-card-wrapper h2 {
-  margin: 0;
-  margin-bottom: 0.25rem;
-  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
-  font-family: "Verdana";
-  font-weight: 700;
-}
-
-.contact-divider {
-  width: 64px;
-  height: 4px;
-  background-color: #4c72ff; /* same as About section */
-  border-radius: 4px;
-  margin-bottom: 2rem;
-}
 
 /* Cards Container */
 .contact-cards {
@@ -685,30 +649,6 @@ body {
   padding: 80px 20px;
   background: #fff;
   text-align: center;
-}
-
-.courses-section .section-title {
-  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
-  font-weight: 700;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: "Verdana";
-}
-
-.courses-section {
-  width: 60px;
-  height: 4px;
-  /* background: #4c72ff; */
-  margin: 10px;
-}
-
-.section-divider {
-  width: 60px;
-  height: 4px;
-  background: #4c72ff;
-  margin: 0px;
-  border-radius: 2px;
 }
 
 .courses-container {
@@ -795,20 +735,6 @@ body {
   overflow: hidden;
 }
 
-.skills-section .section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.skills-section .section-divider {
-  width: 60px;
-  height: 4px;
-  background: #000; /* same color as About divider */
-  margin: 0 auto 40px auto;
-  border-radius: 2px;
-}
-
 /* Scroll rows */
 .scroll-row {
   display: flex;
@@ -822,11 +748,11 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 60px; /* spacing between items */
-  animation: scrollRight 40s linear infinite;
+  animation: scrollRight 120s linear infinite;
 }
 
 .scroll-row.scroll-left .scroll-content {
-  animation: scrollLeft 40s linear infinite;
+  animation: scrollLeft 120s linear infinite;
 }
 
 .scroll-content img {
