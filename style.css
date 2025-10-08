@@ -872,7 +872,7 @@ body {
 
   .logo {
     justify-content: flex-start;
-    margin-left: 1.5rem;
+    margin-left: 0rem; 
   }
 
   .logo-img {
