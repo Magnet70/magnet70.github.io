@@ -739,32 +739,28 @@ body {
   padding-right: 60px;
 }
 
-.scroll-row.scroll-left .scroll-content {
-  animation: scrollLeft 20s linear infinite;
-  padding-right: 0;
-  padding-left: 60px;
+/* Duplicate content for seamless loop */
+.scroll-content span,
+.scroll-content img {
+  flex-shrink: 0;
 }
 
-scroll-content::after{
+/* Create duplicate content */
+.scroll-content::after {
   content: "";
   display: inline-flex;
   align-items: center;
   gap: 60px;
 }
 
-
-.scroll-content img {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-  filter: grayscale(100%); 
+/* For right scrolling rows */
+.scroll-row.scroll-right .scroll-content {
+  animation: scrollRight 20s linear infinite;
 }
 
-.scroll-content span {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #000;
-  white-space: nowrap;
+/* For left scrolling rows */
+.scroll-row.scroll-left .scroll-content {
+  animation: scrollLeft 20s linear infinite;
 }
 
 /* Animations */
@@ -785,8 +781,6 @@ scroll-content::after{
     transform: translateX(0);
   }
 }
-
-
   
 
 
