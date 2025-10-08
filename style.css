@@ -859,22 +859,23 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem 0rem;
+    padding: 1.5rem 1rem;
+    width:100%;
+    box-sizing: border-box;
   }
 
   .projects-card{
     width: 100%;
-    max-width: 360px;
-    margin: 0 auto 1.5rem;
+    max-width: 100%;
+    margin: 0 auto ;
     padding: 0;
   }
   
   .projects-list {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
     width: 100%;
-    max-width: 360px;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -884,7 +885,10 @@ body {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    background-color: #f7f7f7
+    text-align: left;
   }
   
   .contact-cards {
