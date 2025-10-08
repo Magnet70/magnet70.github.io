@@ -197,7 +197,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: auto;
-  padding: 2rem;
+ /* padding: 2rem; */
   box-sizing: border-box;
   text-align: center;
 }
