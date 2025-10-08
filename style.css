@@ -34,17 +34,6 @@ section {
   transform: scale(1.05);
 }
 
-/* Center logo on mobile */
-@media (max-width: 768px) {
-  .logo {
-    justify-content: flex-start;
-  }
-
-  .logo-img {
-    margin-left: 1.5rem;
-  }
-}
-
 /* Align logo to the left on larger screens */
 @media (min-width: 769px) {
   .logo {
@@ -875,7 +864,19 @@ body {
 @media (max-width: 768px) {
   
   header{
+    display: flex;
+    justify-content: space-between;
     padding: 0.5rem 1.5rem;
+    align-items: center;
+  }
+
+  .logo {
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+  }
+
+  .logo-img {
+    margin-left: 1.5rem;
   }
   
   .navbar ul {
@@ -885,11 +886,9 @@ body {
     background: #ffffff;
     position: absolute;
     top: 60px;
-    right: 0;
     left: 0;
     width: 100%;
     padding: 1em 0;
-    box-sizing: border-box;
   }
   .navbar ul li{
     width: 100%;
@@ -902,6 +901,9 @@ body {
   
   .menu-toggle {
     display: block; /* show hamburger */
+    margin-left: auto;
+    margin-right: 1.5rem;
+    order: 2;
   }
 
   
