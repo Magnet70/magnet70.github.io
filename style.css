@@ -691,13 +691,19 @@ body {
   font-family: "Verdana";
 }
 
-/* .courses-section, */
+.courses-section {
+  width: 60px;
+  height: 4px;
+  background: #4c72ff;
+  margin: 40px;
+  border-radius: 2px;
+}
 
 .section-divider {
   width: 60px;
   height: 4px;
   background: #4c72ff;
-  margin: 40px;
+  margin: 10px;
   border-radius: 2px;
 }
 
