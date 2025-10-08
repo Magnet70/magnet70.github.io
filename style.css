@@ -755,12 +755,12 @@ body {
 
 /* For right scrolling rows */
 .scroll-row.scroll-right .scroll-content {
-  animation: scrollRight 20s linear infinite;
+  animation: scrollRight 40s linear infinite;
 }
 
 /* For left scrolling rows */
 .scroll-row.scroll-left .scroll-content {
-  animation: scrollLeft 20s linear infinite;
+  animation: scrollLeft 40s linear infinite;
 }
 
 /* Animations */
