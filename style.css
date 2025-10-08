@@ -902,7 +902,7 @@ body {
   .menu-toggle {
     display: block; /* show hamburger */
     margin-left: auto;
-    margin-right: 1.5rem;
+    margin-right: 0.75rem;
     order: 2;
   }
 
