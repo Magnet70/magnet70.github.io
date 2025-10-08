@@ -1,5 +1,4 @@
-  }
-  
+
   .projects-card {
     padding: 1rem;
   }
@@ -22,7 +21,7 @@ section {
 
 /* Responsive Logo Image */
 .logo-img {
-  width: clamp(80px, 12vw, 80px); /* 🧠 responsive: min 80px, ideal 12% viewport width, max 140px */
+  width: clamp(100px, 12vw, 120px); /* 🧠 responsive: min 80px, ideal 12% viewport width, max 140px */
   height: auto;
   display: block;
   transition: transform 0.3s ease, width 0.3s ease;
@@ -61,10 +60,10 @@ section {
 /* General header */
 header {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 0.5em;
+  padding: 0.5em 1.5rem;
   background: #ffffff;
   color: #000000;
   position: fixed;
@@ -72,6 +71,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 1000;
+  box-sizing: border-box;
 }
 
 body {
@@ -82,7 +82,8 @@ body {
 .navbar{
   flex: 1;
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  width: 100%;
 }
 
 .navbar ul {
@@ -93,6 +94,8 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .navbar ul li a {
@@ -109,7 +112,7 @@ body {
 /* Hamburger button (hidden on desktop) */
 .menu-toggle {
   display: none;
-  font-size: 1.8em;
+  font-size: 2rem;
   background: none;
   border: none;
   color: #000000;
@@ -871,6 +874,11 @@ body {
 
 /* Mobile mode */
 @media (max-width: 768px) {
+  
+  header{
+    padding: 0.5rem 1.5rem;
+  }
+  
   .navbar ul {
     display: none; /* hide by default */
     flex-direction: column;
@@ -882,8 +890,7 @@ body {
     left: 0;
     width: 100%;
     padding: 1em 0;
-    border-radius: 0;
-    margin: 0;
+    box-sizing: border-box;
   }
   .navbar ul li{
     width: 100%;
@@ -893,27 +900,24 @@ body {
   .navbar ul.show {
     display: flex; /* show when toggled */
   }
-  header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 0;
-  }
+  
   .menu-toggle {
     display: block; /* show hamburger */
-    margin-right: 1.5rem;
   }
 
   
   /* Home section*/
   .home-content {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    gap: 1rem;
+    width: 100%;
   }
   .home{
-    align-items: flex-start;
     padding: 2rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   .home-text{
     order: 2;
@@ -926,9 +930,17 @@ body {
   body{
     margin-top: 60px;
   }
-  .about-section{
-    min-height: auto;
+  .about,
+  .badges,
+  .projects,
+  .experience,
+  .contact,
+  .courses-section,
+  .skills-section{
     padding: 2rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
   .about-card {
     gap: 1rem;
@@ -1008,7 +1020,9 @@ body {
 
   .courses-container {
     grid-template-columns: 1fr;
-    max-width: 600px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box:
   }
 
   .course-item {
