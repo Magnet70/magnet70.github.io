@@ -969,27 +969,30 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0rem;
   }
 
   .projects-card{
     width: 100%;
     max-width: 360px;
     margin: 0 auto 1.5rem;
+    padding: 0;
   }
   
   .projects-list {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
     width: 100%;
     max-width: 360px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0;
     box-sizing: border-box;
   }
 
   .project-item {
     width: 100%;
+    margin: 0 auto;
     box-sizing: border-box;
     padding: 1rem;
   }
