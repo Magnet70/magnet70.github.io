@@ -4,23 +4,13 @@ html, body {
   padding: 0;
 }
 
-html {
+body{
   background: linear-gradient(
     to bottom,
-    #ffffff 0%,    /* color 1 */
-    #fafafa 16.6667%,   /* color 2 */
-    #f0f0f0 33.3334%,   /* color 3 */
-    #dddddd 50.0001%,   /* color 4 */
-    #f0f0f0 66.6668%    /* color 5 */
-    #fafafa 83.3335%    /* color 6 */
-    #ffffff 100%   /* color 7 */
+    #ffffff 0%,
+    #dddddd 50%,
+    #ffffff 100%
   );
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-body{
-  background: transparent;
-  margin:0;
 }
 
 
