@@ -484,7 +484,7 @@ body {
   position: absolute;
   left: 0;
   /* color: #4c72ff; */
-  color: linear-gradient(90deg, #0072ff, #00c6ff);
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
   font-size: 0.8rem;
   top: 0.2rem;
 }
