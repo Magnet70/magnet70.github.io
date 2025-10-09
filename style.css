@@ -636,32 +636,53 @@ body {
 
 
 /* ===== Courses Section ===== */
-.courses-section {
-  padding: 80px 20px;
-  background: #fff;
+.courses-section
+ {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.courses-section-section
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
   text-align: center;
 }
 
-.courses-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px 60px; /* vertical & horizontal spacing */
+.courses-card {
   max-width: 1200px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.course-item {
-  background-color: #f7f7f7; /* slightly darker than white */
-  padding: 1.5rem 1rem;
-  border-radius: 12px;
-  flex: 1 1 200px; /* responsive width */
-  max-width: 300px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
   text-align: center;
+  padding: 0;
+}
+
+.courses-container
+ {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 2rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.course-item
+{
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #f7f7f7; /* slightly lighter than section */
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .course-info {
