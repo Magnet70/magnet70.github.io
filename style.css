@@ -5,15 +5,7 @@ html, body {
 }
 
 body{
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #dddddd 50%,
-    #ffffff 100%
-  );
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #CCD1D1;
 }
 
 
