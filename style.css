@@ -360,7 +360,8 @@ body {
 .project-item {
   padding: 1.5rem;
   border-radius: 12px;
-  background-color: #f7f7f7; /* slightly lighter than section */
+  /* background-color: #f7f7f7; /* slightly lighter than section */
+  border: 2px solid white;
   text-align: left;
   width: 100%;
   box-sizing: border-box;
