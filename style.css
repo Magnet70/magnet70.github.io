@@ -1075,7 +1075,7 @@ body {
 
 .two-column-list {
   columns: 2; /* or column-count: 2; */
-  column-gap: 40px; /* spacing between columns */
+  column-gap: 10px; /* spacing between columns */
   list-style: none; /* optional: remove bullets */
   padding: 0;
   margin: 0;
