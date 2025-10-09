@@ -8,11 +8,14 @@ html {
   background: linear-gradient(
     to bottom,
     #ffffff 0%,    /* color 1 */
-    #fafafa 20%,   /* color 2 */
-    #faf7f7 40%,   /* color 3 */
-    #f0f0f0 60%,   /* color 4 */
-    #faf7f7 80%,   /* color 5 */
-    #fafafa 100%   /* color 6 */
+    #fafafa 15%,   /* color 2 */
+    #faf7f7 30%,   /* color 3 */
+    #f0f0f0 45%,   /* color 4 */
+    #dddddd 50%,   /* color 5 */
+    #f0f0f0 55%    /* color 6 */
+    #faf7f7 70%    /* color 7 */
+    #fafafa 85%    /* color 8 */
+    #ffffff 100%   /* color 9 */
   );
   background-size: cover;
   background-repeat: no-repeat;
