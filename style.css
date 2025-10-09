@@ -11,6 +11,9 @@ body{
     #dddddd 50%,
     #ffffff 100%
   );
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
