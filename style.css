@@ -650,7 +650,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  /* padding: 2rem; */
   box-sizing: border-box;
   text-align: center;
   border: red;
@@ -678,7 +678,7 @@ body {
 
 .course-item
 {
- /* padding: 1.5rem; */
+  padding: 1.5rem;
   border-radius: 12px;
   background-color: #f7f7f7; /* slightly lighter than section */
   text-align: left;
