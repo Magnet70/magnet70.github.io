@@ -574,7 +574,7 @@ body {
 
 /* Contact Me Section */
 .contact{
-  background: linear-gradient(to bottom, #FFFFFF, #E5E7E9, #FFFFFF);
+  background: linear-gradient(to bottom, #E5E7E9, #FFFFFF);
   display: flex;
   justify-content: center;
   align-items: center;
