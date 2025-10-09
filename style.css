@@ -653,6 +653,7 @@ body {
   padding: 2rem;
   box-sizing: border-box;
   text-align: center;
+  border: red;
 }
 
 .courses-card {
