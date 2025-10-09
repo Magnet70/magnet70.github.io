@@ -4,9 +4,6 @@ html, body {
   padding: 0;
 }
 
-body{
-  background: #F8F9F9;
-}
 
 
 
@@ -156,6 +153,7 @@ body {
   padding: 0 2em;
   /* background: #ffffff; */
   color: #000000;
+  background: linear-gradient(to bottom, #FFFFFF, #E5E7E9);
 }
 
 .home-content {
