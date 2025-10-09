@@ -508,6 +508,7 @@ body {
 
 .why-me-item {
   font-size: 1.1rem;
+  font-family: "Arial";
   line-height: 1.6;
   color: #333;
   display: flex;
