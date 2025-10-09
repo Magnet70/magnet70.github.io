@@ -14,7 +14,6 @@ html {
     #faf7f7 80%,   /* color 5 */
     #fafafa 100%   /* color 6 */
   );
-  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
