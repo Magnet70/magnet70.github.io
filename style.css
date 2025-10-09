@@ -783,8 +783,8 @@ body {
 
 /* Icon Styles */
 .scroll-content img {
-  width: 50px;
-  height: 50px;
+  width: auto;
+  height: 100px;
   object-fit: contain;
   filter: grayscale(0.3);
   transition: all 0.3s ease;
@@ -819,11 +819,11 @@ body {
 
 /* Animation Duration */
 .scroll-row .scroll-content {
-  animation-duration: 40s; /* Default speed */
+  animation-duration: 120s; /* Default speed */
 }
 
 .skills-words .scroll-content {
-  animation-duration: 60s; /* Slower for words */
+  animation-duration: 180s; /* Slower for words */
 }
 
 /* === Responsive Fix === */
