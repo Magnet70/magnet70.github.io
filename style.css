@@ -5,7 +5,7 @@ html, body {
 }
 
 body{
-  background: #CCD1D1;
+  background: #F2F3F3;
 }
 
 
@@ -603,7 +603,8 @@ body {
 
 /* Individual Cards */
 .contact-card {
-  background-color: #f7f7f7; /* slightly darker than white */
+  /* background-color: #f7f7f7; /* slightly darker than white */
+  border: the 2px solid white;
   padding: 1.5rem 1rem;
   border-radius: 12px;
   flex: 1 1 200px; /* responsive width */
@@ -699,7 +700,8 @@ body {
 {
   padding: 1.5rem;
   border-radius: 12px;
-  background-color: #f7f7f7; /* slightly lighter than section */
+  /*background-color: #f7f7f7; /* slightly lighter than section */
+  border: 2px solid white;
   text-align: left;
   width: 100%;
   box-sizing: border-box;
