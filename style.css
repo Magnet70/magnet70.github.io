@@ -90,7 +90,7 @@ body {
 }
 
 .navbar ul li a:hover {
-  color: #4c72ff;
+  color: #00a2ff;
 }
 
 /* Hamburger button (hidden on desktop) */
@@ -120,7 +120,7 @@ body {
 .section-divider {
   width: 64px;
   height: 4px;
-  background-color: #4c72ff;
+  background-color: #00a2ff;
   border-radius: 4px;
   margin: 0.75rem auto 2rem; /* Consistent spacing: 0.75rem top, 2rem bottom */
 }
@@ -191,7 +191,7 @@ body {
 }
 
 .btn:hover {
-  background: #3456d1;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
 }
 
 .home-image {
@@ -359,7 +359,7 @@ body {
 }
 
 .project-item h3 a:hover {
-  color: #4c72ff; /* same color as little divider */
+  color: #00a2ff; /* same color as little divider */
 }
 
 .project-item p {
@@ -392,7 +392,7 @@ body {
 }
 
 .project-btn:hover {
-  background-color: #3456d1;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
 }
 
 
@@ -443,7 +443,7 @@ body {
 .job-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #4c72ff;
+  color: #00a2ff;
   font-family: "Verdana";
   margin: 0;
   line-height: 1.3;
@@ -483,7 +483,7 @@ body {
   content: "♦";
   position: absolute;
   left: 0;
-  color: #4c72ff;
+  color: #00a2ff;
   font-size: 0.8rem;
   top: 0.2rem;
 }
@@ -602,7 +602,7 @@ body {
 }
 
 .contact-card a {
-  color: #4c72ff;
+  color: #00a2ff;
   text-decoration: none;
 }
 
@@ -676,7 +676,7 @@ body {
   margin-top: 6px;
   font-size: 0.95rem;
   font-family: "Verdana";
-  color: #4c72ff;
+  color: #00a2ff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -693,7 +693,7 @@ body {
 }
 
 .course-link {
-  color: #4c72ff;
+  color: #00a2ff;
   font-size: 0.95rem;
   font-family: "Verdana";
   text-decoration: none;
