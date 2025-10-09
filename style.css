@@ -786,7 +786,7 @@ body {
   width: auto;
   height: 50px;
   object-fit: contain;
-  filter: grayscale(0.3);
+ /*  filter: grayscale(0.3); */
   transition: all 0.3s ease;
   flex-shrink: 0;
 }
@@ -808,7 +808,8 @@ body {
   transition: transform 0.3s ease, filter 0.3s ease;
   white-space: nowrap;
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1rem;
+  font-family: "Verdana";
   flex-shrink: 0;
 }
 
