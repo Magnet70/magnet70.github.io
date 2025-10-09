@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  height: 100vh; /* full viewport height */
+  height: 100%; /* full viewport height */
   margin: 0;
   background: linear-gradient(
     to bottom,
