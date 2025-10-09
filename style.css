@@ -232,7 +232,6 @@ body {
 
 /* About Me Section */
 .about {
-  margin-top: 3rem;
   background: linear-gradient(to bottom, #E5E7E9, #FFFFFF);
   display: flex;
   align-items: center;
@@ -422,7 +421,6 @@ body {
 /* ======= Experience Section ======= */
 .experience {
   background: linear-gradient(to bottom, #FFFFFF, #E5E7E9);
-  margin-top: 3rem;
   display: flex;
   justify-content: center;
   padding: 2rem;
@@ -512,7 +510,7 @@ body {
 
 /* ===== Why Me Section ===== */
 .why-me-section {
-  background: linear-gradient(to bottom, #E5E7E9, #FFFFFF);
+  background: linear-gradient(to bottom, #FFFFFF, #E5E7E9);
   padding: 80px 20px;
  /* background: #fff;  */
   text-align: center;
@@ -576,8 +574,7 @@ body {
 
 /* Contact Me Section */
 .contact{
-  background: linear-gradient(to bottom, #FFFFFF, #E5E7E9);
-  margin-top: 3rem;
+  background: linear-gradient(to bottom, #FFFFFF, #E5E7E9, #FFFFFF);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -661,7 +658,7 @@ body {
 /* ===== Courses Section ===== */
 .courses-section
  {
-   background: linear-gradient(to bottom, #E5E7E9, #FFFFFF);
+  background: linear-gradient(to bottom, #FFFFFF, #E5E7E9);
   display: flex;
   justify-content: center;
   padding: 2rem;
@@ -829,7 +826,7 @@ body {
 
 /* Skills Section Base Styles */
 .skills-section {
-  background: linear-gradient(to bottom, #FFFFFF, #E5E7E9);
+  background: linear-gradient(to bottom, #E5E7E9, #FFFFFF);
   padding: 60px 0;
   overflow: hidden;
   position: relative;
@@ -986,7 +983,9 @@ body {
   }
 }
 
-
+#education {
+  background: linear-gradient(to bottom, #E5E7E9, #FFFFFF);
+}
 
 
 
