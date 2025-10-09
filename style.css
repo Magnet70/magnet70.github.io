@@ -663,6 +663,7 @@ body {
 
 .course-title {
   font-size: 1.3rem;
+  font-family: "Verdana";
   font-weight: 700;
   margin-bottom: 5px;
   color: #000;
@@ -671,6 +672,7 @@ body {
 .course-provider {
   margin-top: 6px;
   font-size: 0.95rem;
+  font-family: "Verdana";
   color: #4c72ff;
   text-decoration: none;
   font-weight: 500;
@@ -690,6 +692,7 @@ body {
 .course-link {
   color: #4c72ff;
   font-size: 0.95rem;
+  font-family: "Verdana";
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -703,6 +706,7 @@ body {
 
 .course-link i {
   font-size: 0.9rem;
+  font-family: "Verdana";
 }
 
 
