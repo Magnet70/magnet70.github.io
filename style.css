@@ -1073,6 +1073,16 @@ body {
   color: #aaa;
 }
 
+.two-column-list {
+  columns: 2; /* or column-count: 2; */
+  column-gap: 40px; /* spacing between columns */
+  list-style: none; /* optional: remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .footer-container {
