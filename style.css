@@ -784,7 +784,7 @@ body {
 /* Icon Styles */
 .scroll-content img {
   width: auto;
-  height: 100px;
+  height: 50px;
   object-fit: contain;
   filter: grayscale(0.3);
   transition: all 0.3s ease;
@@ -819,11 +819,11 @@ body {
 
 /* Animation Duration */
 .scroll-row .scroll-content {
-  animation-duration: 120s; /* Default speed */
+  animation-duration: 150s; /* Default speed */
 }
 
 .skills-words .scroll-content {
-  animation-duration: 180s; /* Slower for words */
+  animation-duration: 150s; /* Slower for words */
 }
 
 /* === Responsive Fix === */
@@ -837,16 +837,16 @@ body {
   }
   
   .scroll-content img {
-    width: 40px;
-    height: 40px;
+    width: auto;
+    height: 50px;
   }
   
   .scroll-row .scroll-content {
-    animation-duration: 30s;
+    animation-duration: 90s;
   }
   
   .skills-words .scroll-content {
-    animation-duration: 45s;
+    animation-duration: 90s;
   }
 }
 
@@ -860,16 +860,16 @@ body {
   }
   
   .scroll-content img {
-    width: 35px;
+    width: auto;
     height: 35px;
   }
   
   .scroll-row .scroll-content {
-    animation-duration: 25s;
+    animation-duration: 90s;
   }
   
   .skills-words .scroll-content {
-    animation-duration: 35s;
+    animation-duration: 90s;
   }
 }
 
@@ -1085,16 +1085,6 @@ body {
     flex-direction: row;
     gap: 16px;
     margin-top: 5px;
-  }
-  .skills .logos img,
-  .scroll-content img {
-    width: auto;
-    height: 50px;
-    object-fit: contain;
-  }
-  
-  .scroll-content span {
-    font-size: 1rem;
   }
   
  .why-me-container {
