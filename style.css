@@ -179,7 +179,8 @@ body {
 }
 
 .btn {
-  background: #4c72ff;
+ /* background: #4c72ff; */
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
   color: white;
   padding: 0.8em 1.5em;
   border-radius: 10px;
@@ -382,7 +383,8 @@ body {
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 15px;
-  background-color: #4c72ff; /* same as little divider */
+  /* background-color: #4c72ff; /* same as little divider */
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
   color: #fff;
   font-family: "Arial";
   text-decoration: none;
@@ -525,7 +527,8 @@ body {
   display: inline-block;
   width: 1.3rem;
   height: 1.3rem;
-  background-color: #4c72ff;
+  /* background-color: #4c72ff; */
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
   border-radius: 50%;
   position: relative;
   flex-shrink: 0;
