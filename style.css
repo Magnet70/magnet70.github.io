@@ -4,18 +4,24 @@ html, body {
   padding: 0;
 }
 
-body {
+html {
   background: linear-gradient(
     to bottom,
-    #ffffff,   /* color 1 */
-    #fafafa,   /* color 2 */
-    #faf7f7,   /* color 3 */
-    #f0f0f0,   /* color 4 */
-    #faf7f7,   /* color 5 */
-    #fafafa    /* color 6 */
+    #ffffff 0%,    /* color 1 */
+    #fafafa 20%,   /* color 2 */
+    #faf7f7 40%,   /* color 3 */
+    #f0f0f0 60%,   /* color 4 */
+    #faf7f7 80%,   /* color 5 */
+    #fafafa 100%   /* color 6 */
   );
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
+body{
+  background: transparent;
+  margin:0;
+}
 
 
 
