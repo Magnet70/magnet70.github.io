@@ -709,6 +709,7 @@ body {
   font-weight: 700;
   margin-bottom: 8px;
   color: #000;
+  margin: 0;
 }
 
 .course-links {
@@ -716,7 +717,7 @@ body {
   justify-content: space-between; /* provider left, links right */
   align-items: center;
   width: 100%;
-  flex-wrap: wrap; /* ensures good mobile behavior */
+  flex-wrap: nowrap; /* ensures good mobile behavior */
 }
 
 .course-provider {
@@ -732,6 +733,7 @@ body {
   display: flex;
   gap: 20px;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .course-link {
