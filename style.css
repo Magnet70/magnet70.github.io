@@ -684,6 +684,14 @@ body {
   text-align: left;
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  flex-ditection: column;
+  justify-content: space-between;
+}
+
+.course-item * {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .course-info {
@@ -697,28 +705,32 @@ body {
   font-size: 1.3rem;
   font-family: "Verdana";
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   color: #000;
 }
 
-.course-provider {
+.course-links {
+  display: flex;
+  justify-content: space-between; /* provider left, links right */
+  align-items: center;
+  width: 100%;
   margin-top: 6px;
+  flex-wrap: wrap; /* ensures good mobile behavior */
+}
+
+.course-provider {
   font-size: 0.95rem;
   font-family: "Verdana";
   color: #0072ff;
   text-decoration: none;
   font-weight: 500;
+  white-space: nowrap;
 }
 
-.course-provider:hover {
-  text-decoration: underline;
-}
-
-.course-links {
+.course-links-right {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 20px;
+  align-items: center;
 }
 
 .course-link {
@@ -730,16 +742,15 @@ body {
   align-items: center;
   gap: 6px;
   transition: color 0.2s ease-in-out;
+  white-space: nowrap;
 }
 
 .course-link:hover {
   color: #333;
 }
 
-.course-link i {
-  font-size: 0.9rem;
-  font-family: "Verdana";
-}
+
+
 
 
 
