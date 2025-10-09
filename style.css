@@ -1,82 +1,38 @@
-/* Add to your CSS */
 body {
   margin: 0;
   min-height: 100vh;
-  background: #ffffff;
-  position: relative;
-  overflow-x: hidden;
+  background: 
+    /* Base white */
+    #ffffff,
+    
+    /* Top wave layer */
+    radial-gradient(ellipse at 50% 20%, 
+      rgba(252, 252, 252, 0.9) 0%, 
+      rgba(245, 245, 245, 0.6) 30%, 
+      rgba(255, 255, 255, 0) 70%),
+    
+    /* Middle wave layer */
+    radial-gradient(ellipse at 30% 50%, 
+      rgba(250, 250, 250, 0.8) 0%, 
+      rgba(240, 240, 240, 0.4) 40%, 
+      rgba(255, 255, 255, 0) 80%),
+    
+    /* Bottom wave layer */
+    radial-gradient(ellipse at 70% 80%, 
+      rgba(248, 248, 248, 0.7) 0%, 
+      rgba(235, 235, 235, 0.3) 35%, 
+      rgba(255, 255, 255, 0) 75%);
+  
+  background-attachment: fixed;
+  animation: gentleWave 30s ease-in-out infinite;
 }
 
-.wave-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-  opacity: 0.7;
-}
-
-.wave {
-  position: absolute;
-  width: 200%;
-  height: 300px;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    rgba(248, 248, 248, 0.8) 25%, 
-    rgba(240, 240, 240, 0.6) 50%, 
-    rgba(248, 248, 248, 0.8) 75%, 
-    transparent 100%);
-  border-radius: 40% 45% 35% 40%;
-  filter: blur(15px);
-  animation: waveFlow 25s infinite linear;
-}
-
-.wave-1 {
-  top: 15%;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    rgba(250, 250, 250, 0.9) 20%, 
-    rgba(242, 242, 242, 0.7) 45%, 
-    rgba(250, 250, 250, 0.9) 70%, 
-    transparent 100%);
-  animation-delay: 0s;
-  height: 250px;
-}
-
-.wave-2 {
-  top: 45%;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    rgba(245, 245, 245, 0.8) 30%, 
-    rgba(235, 235, 235, 0.5) 55%, 
-    rgba(245, 245, 245, 0.8) 80%, 
-    transparent 100%);
-  animation-delay: -8s;
-  height: 280px;
-  border-radius: 35% 40% 30% 35%;
-}
-
-.wave-3 {
-  top: 75%;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    rgba(252, 252, 252, 0.7) 25%, 
-    rgba(238, 238, 238, 0.4) 50%, 
-    rgba(252, 252, 252, 0.7) 75%, 
-    transparent 100%);
-  animation-delay: -16s;
-  height: 220px;
-  border-radius: 45% 35% 40% 45%;
-}
-
-@keyframes waveFlow {
-  0% {
-    transform: translateX(-50%) rotate(0deg);
+@keyframes gentleWave {
+  0%, 100% {
+    background-position: 0% 0%, 0% 0%, 0% 0%;
   }
-  100% {
-    transform: translateX(0%) rotate(360deg);
+  50% {
+    background-position: 0% 5%, 2% 0%, -2% 0%;
   }
 }
 
