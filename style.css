@@ -1,35 +1,83 @@
+/* Add to your CSS */
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #ffffff;
-  background-image: 
-    /* Large silver circles */
-    radial-gradient(circle at 20% 30%, 
-      rgba(245, 245, 245, 0.8) 0%, 
-      rgba(230, 230, 230, 0.4) 20%, 
-      transparent 50%),
-    radial-gradient(circle at 80% 70%, 
-      rgba(242, 242, 242, 0.7) 0%, 
-      rgba(225, 225, 225, 0.3) 25%, 
-      transparent 55%),
-    
-    /* Subtle grid lines */
-    linear-gradient(rgba(240, 240, 240, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(240, 240, 240, 0.1) 1px, transparent 1px),
-    
-    /* Soft diagonal silver stripes */
-    repeating-linear-gradient(45deg, 
-      transparent, 
-      transparent 10px, 
-      rgba(248, 248, 248, 0.05) 10px, 
-      rgba(248, 248, 248, 0.05) 20px);
-  
-  background-size: 
-    400px 400px, 
-    500px 500px, 
-    50px 50px, 
-    50px 50px, 
-    100px 100px;
+  background: #ffffff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.wave-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0.7;
+}
+
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 300px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(248, 248, 248, 0.8) 25%, 
+    rgba(240, 240, 240, 0.6) 50%, 
+    rgba(248, 248, 248, 0.8) 75%, 
+    transparent 100%);
+  border-radius: 40% 45% 35% 40%;
+  filter: blur(15px);
+  animation: waveFlow 25s infinite linear;
+}
+
+.wave-1 {
+  top: 15%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(250, 250, 250, 0.9) 20%, 
+    rgba(242, 242, 242, 0.7) 45%, 
+    rgba(250, 250, 250, 0.9) 70%, 
+    transparent 100%);
+  animation-delay: 0s;
+  height: 250px;
+}
+
+.wave-2 {
+  top: 45%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(245, 245, 245, 0.8) 30%, 
+    rgba(235, 235, 235, 0.5) 55%, 
+    rgba(245, 245, 245, 0.8) 80%, 
+    transparent 100%);
+  animation-delay: -8s;
+  height: 280px;
+  border-radius: 35% 40% 30% 35%;
+}
+
+.wave-3 {
+  top: 75%;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(252, 252, 252, 0.7) 25%, 
+    rgba(238, 238, 238, 0.4) 50%, 
+    rgba(252, 252, 252, 0.7) 75%, 
+    transparent 100%);
+  animation-delay: -16s;
+  height: 220px;
+  border-radius: 45% 35% 40% 45%;
+}
+
+@keyframes waveFlow {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(0%) rotate(360deg);
+  }
 }
 
 
