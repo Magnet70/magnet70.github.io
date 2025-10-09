@@ -713,120 +713,103 @@ body {
 
 
 
-/* ===== Skills Section ===== */
+
+
+
+/* Skills Section Base Styles */
 .skills-section {
-  padding: 80px 20px;
-  background: #fff;
-  text-align: center;
+  padding: 60px 0;
   overflow: hidden;
+  position: relative;
 }
 
-.skills .logos img{
-  height: 100px;
-  width: auto;
-  object-fit: contain;
-  
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
 }
 
+.section-divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
 
-/* Scroll rows */
+/* Scroll Container Styles */
 .scroll-row {
   display: flex;
   overflow: hidden;
-  white-space: nowrap;
-  background: #fff;
   padding: 20px 0;
   position: relative;
 }
 
 .scroll-content {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 60px; /* spacing between items */
-  animation: scrollRight 20s linear infinite;
-  padding-right: 60px;
+  gap: 40px;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  white-space: nowrap;
 }
 
-/* Duplicate content for seamless loop */
-.scroll-content span,
-.scroll-content img {
-  flex-shrink: 0;
+/* Scroll Animations */
+.scroll-right .scroll-content {
+  animation-name: scrollRight;
 }
 
-/* Create duplicate content */
-.scroll-content::after {
-  content: "";
-  display: inline-flex;
-  align-items: center;
-  gap: 60px;
+.scroll-left .scroll-content {
+  animation-name: scrollLeft;
 }
 
-/* For right scrolling rows */
-.scroll-row.scroll-right .scroll-content {
-  animation: scrollRight 40s linear infinite;
-}
-
-/* For left scrolling rows */
-.scroll-row.scroll-left .scroll-content {
-  animation: scrollLeft 40s linear infinite;
-}
-
-/* Animations */
 @keyframes scrollRight {
   0% {
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0%);
   }
 }
 
 @keyframes scrollLeft {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-100%);
   }
 }
-  
 
-
-
-
-
-
-
-/* === Scrolling Skill Words === */
-.skills-words {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-  position: relative;
-  padding: 30px 0;
-  /* background: #f9f9f9; */
+/* Icon Styles */
+.scroll-content img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: grayscale(0.3);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
-.skills-words .scroll-track{
-  display: flex;
-  width: max-content;
-  animation: scrollWords 18s linear infinite;
+.scroll-content img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
 }
 
+/* Word Styles */
 .skills-words .word {
-  display: inline-block;
-  margin: 0 50px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   background: linear-gradient(90deg, #0072ff, #00c6ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   user-select: none;
   transition: transform 0.3s ease, filter 0.3s ease;
   white-space: nowrap;
+  font-weight: 600;
+  font-size: 1.4rem;
+  flex-shrink: 0;
 }
 
 .skills-words .word:hover {
@@ -834,28 +817,61 @@ body {
   filter: brightness(1.3);
 }
 
+/* Animation Duration */
+.scroll-row .scroll-content {
+  animation-duration: 40s; /* Default speed */
+}
+
+.skills-words .scroll-content {
+  animation-duration: 60s; /* Slower for words */
+}
 
 /* === Responsive Fix === */
 @media (max-width: 768px) {
   .skills-words .word {
     font-size: 1.2rem;
-    margin: 0 30px;
   }
-  .skills-words .scroll-track {
-    animation-duration: 22s;
+  
+  .scroll-content {
+    gap: 30px;
+  }
+  
+  .scroll-content img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .scroll-row .scroll-content {
+    animation-duration: 30s;
+  }
+  
+  .skills-words .scroll-content {
+    animation-duration: 45s;
   }
 }
 
 @media (max-width: 480px) {
-  .skills-words .scroll-track {
-    animation-duration: 26s;
-  }
   .skills-words .word {
     font-size: 1rem;
-    margin: 0 20px;
+  }
+  
+  .scroll-content {
+    gap: 20px;
+  }
+  
+  .scroll-content img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .scroll-row .scroll-content {
+    animation-duration: 25s;
+  }
+  
+  .skills-words .scroll-content {
+    animation-duration: 35s;
   }
 }
-
 
 
 
