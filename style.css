@@ -1107,15 +1107,27 @@ body {
   opacity: 0.7;
   cursor: pointer;
   z-index: 1000;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
+  box-shafow: 0 6px 18px rgba(0,0,0,0.12);
   font-size: 30px;
   font-family: "Verdana";
   font-weight: bold;
   background-clip: padding-box;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  transform: scale(0.95);
+  visibility: hidden;
+  pointer-events: none;
 }
+
+ /* visible state */
+  #toTopBtn.show {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+  }
 
 #toTopBtn:hover {
   opacity: 1;
@@ -1129,6 +1141,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+#toTopBtn svg { display: block; width: 22px; height: 22px;}
+
 
 /* Mobile-friendly spacing */
 @media (max-width: 768px) {
