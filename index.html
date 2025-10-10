@@ -8,6 +8,27 @@
   
 </head>
 <body>
+
+<!-- The lines in background -->
+  <!-- put this as the first child of <body> -->
+<div class="wave-bg" aria-hidden="true">
+  <svg viewBox="0 0 1200 3000" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- subtle background glow -->
+    <rect width="1200" height="3000" fill="transparent"></rect>
+
+    <!-- multiple smooth white wave strokes (varying width & opacity) -->
+    <path d="M0 40 C180 140 360 260 600 220 C840 180 960 260 1200 340 L1200 3000 L0 3000 Z"
+          fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.12"/>
+    <path d="M0 120 C200 260 420 420 620 380 C880 320 980 440 1200 520 L1200 3000 L0 3000 Z"
+          fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-opacity="0.08"/>
+    <path d="M0 220 C140 360 300 540 560 520 C820 500 980 620 1200 700 L1200 3000 L0 3000 Z"
+          fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.06"/>
+    <path d="M0 320 C160 480 380 720 620 700 C860 680 980 820 1200 900 L1200 3000 L0 3000 Z"
+          fill="none" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.04"/>
+  </svg>
+</div>
+
+
   
   <header>
     <!-- Logo -->
