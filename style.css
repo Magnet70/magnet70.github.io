@@ -235,6 +235,11 @@ body {
  /* padding: 2rem; */
   box-sizing: border-box;
   text-align: center;
+  
+  background-image: url("assets/bg1.svg")
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .about-card {
