@@ -1,12 +1,49 @@
+/* place in your style.css or inside <style> */
 html, body {
+  /* ensure body stretches with content so svg 100% height = document height */
+  height: auto; /* keep default */
+  min-height: 100%;
+  position: relative;
+}
+
+/* wave background container */
+.wave-bg {
+  position: absolute;       /* positioned relative to body (or nearest positioned ancestor) */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;             /* stretches to document height */
+  overflow: visible;
+  z-index: -1;              /* behind page content */
+  pointer-events: none;     /* non-interactive */
+}
+
+/* make svg scale to the container (document height) */
+.wave-bg svg {
+  width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
+  display: block;
+}
+
+/* optional: reduce intensity on small screens */
+@media (max-width: 600px) {
+  .wave-bg path { stroke-opacity: 0.06 !important; stroke-width: 1.2 !important; }
 }
 
 
 
 
+
+
+
+
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 
 html {
