@@ -253,7 +253,7 @@ body {
   font-size: clamp(0.95rem, 1.6vw, 1.05rem);
   line-height: 1.6;
   color: black;
-  max-width: 60ch;
+  max-width: 90ch;
   font-family:"Arial";
 }
 
@@ -292,7 +292,7 @@ body {
   margin-bottom: 2rem;
 }
 .badge-top img {
-  max-width: 180px;
+  max-width: 200px;
   width: 100%;
   height: auto;
 }
@@ -307,7 +307,7 @@ body {
 }
 
 .badges-grid img {
-  max-width: 150px;
+  max-width: 180px;
   width: 100%;
   height: auto;
 }
@@ -1184,12 +1184,12 @@ body {
   }
 
   .badge-top img {
-    max-width: 140px;
+    max-width: 200px;
     margin-bottom: 1.5rem;
   }
 
   .badges-grid img {
-    max-width: 100px;
+    max-width: 180px;
     padding: 0.75rem;
   }
   
