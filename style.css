@@ -363,6 +363,8 @@ body {
 
 .project-item h3 {
   margin: 0 0 0.5rem 0;
+  color: #0072ff;
+  font-size: clamp(1.1rem, 1.3vw, 1.2rem);
 }
 
 .project-item h3 a {
