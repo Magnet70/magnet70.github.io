@@ -363,18 +363,12 @@ body {
 
 .project-item h3 {
   margin: 0 0 0.5rem 0;
-  color: #0072ff;
-  font-size: clamp(1.1rem, 1.3vw, 1.2rem);
 }
 
 .project-item h3 a {
-  color: #000;
   font-family: "Verdana";
-  text-decoration: none;
-}
-
-.project-item h3 a:hover {
-  color: #0072ff; /* same color as little divider */
+  color: #0072ff;
+  font-size: clamp(1.1rem, 1.3vw, 1.2rem);
 }
 
 .project-item p {
